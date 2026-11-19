@@ -42,7 +42,7 @@ jobs:
           test -s app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml
           grep -q 'android:icon="@mipmap/ic_launcher"' app/src/main/AndroidManifest.xml
           grep -q 'android:roundIcon="@mipmap/ic_launcher_round"' app/src/main/AndroidManifest.xml
-          grep -q '@drawable/ic_launcher_foreground' app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml
+          grep -q '@mipmap/ic_launcher' app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml
           grep -q '@drawable/ic_launcher_foreground' app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml
 
       - name: Build debug APK
